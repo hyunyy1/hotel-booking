@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# 🏨 hotel-booking
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## demo
+🌟 [여기](https://hotelbooking-hyunseo.netlify.app/login/) 에서 사용해볼 수 있습니다.
 
-## Available Scripts
 
-In the project directory, you can run:
+## project
+- React Query를 이용해 Supabase에 저장된 데이터를 가져와 실시간으로 변하는(체크인, 체크아웃) 호텔 예약 정보를 보여줌
+- Styled Components를 이용하였고, 라이트 / 다크모드 구현함
+- Supabase의 사용자 인증과 권한부여를 통해 로그인에 성공한 사람만 사이트에 접근 가능하게 함
+- Compound Components를 이용해서 reusable하게 만듬
+- UI State관리를 위해 context API 사용함
+- booking과 cabin 필터링과 정렬을 위해 search 파라미터를 사용함
+- 체크인 시 총 가격을 지불 했는 지 사전에 체크함 ( 조식비용을 추가할 수 있음 ) 
+- react-hook-form를 이용해 form을 효율적으로 처리함
+- react-hot-toast를 이용해 성공, 수정, 삭제 시 알림을 시각적으로 구현함
+- recharts를 이용해 호텔 예약 정보를 시각화하여 차트로 보여줌 ( 기간별 총 가격, 체류 기간 등 )
+- 왼쪽 하단의 sample data upload 버튼을 눌러 데이터를 처음 상태로 세팅할 수 있음
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+####  db 테이블
+![image](https://github.com/hyunyy1/hotel-booking/assets/79568825/1914469b-242c-40d9-a0df-6170081df9c7)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## start
+```
+git clone https://github.com/hyunyy1/hotel-booking.git
+npm install
+```
